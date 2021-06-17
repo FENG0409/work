@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>作品集</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        @media screen and (max-width: 1200px) {
+            header {
+                width: 100%;
+            }
+
+            main {
+                width: 100%;
+            }
+
+            footer {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 479px) and (max-width: 1200px) {
+            header {
+                width: 100%;
+                height: 100px;
+            }
+
+            header nav {
+                padding: 30px 0;
+                width: 100%;
+            }
+
+            header nav .logo {
+                width: 80px;
+                height: 100px;
+                float: left;
+            }
+
+            header nav .btn-group {
+                float: right;
+                width: 320px;
+                height: 100%;
+            }
+
+            header nav .btn-group .btn-1 {
+                width: 100px;
+                height: 80px;
+                margin: 0;
+                float: right;
+            }
+
+            header nav .btn-group .btn-2 {
+                margin: 0 10px;
+            }
+            main #section-2 .bottm{
+               flex-wrap: wrap;
+            }
+
+            main #section-3{
+                flex-wrap: wrap;
+            }
+        }
+        @media screen and (max-width: 478px){
+            header {
+                width: 100%;
+                height: 100px;
+            }
+
+            header nav {
+                padding: 30px 0;
+                width: 100%;
+            }
+
+            header nav .logo {
+                width: 50px;
+                height: 100px;
+            }
+
+            header nav .btn-group {
+                display: none;
+            }
+            main #section-2 .bottm{
+               flex-wrap: wrap;
+            }
+
+            main #section-3{
+                flex-wrap: wrap;
+            }
+            footer{
+                height: 200px;
+                background-color: gray;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png" title="作品集" width="200px" height="100px">
+            </div>
+            <div class="btn-group">
+                <div class="btn-1"><a href="./others/自我介紹/LV1.html" target="_blank">關於我</a></div>
+                <div class="btn-2"><a href="#">首頁</a></div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section-1" class="full-page bg-setting">
+            <div class="mask">
+                <a href="#s2">
+                    <div class="text-box">
+                        <span>關於作品</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="section-2">
+            <div id="s2" class="fake"></div>
+            <div class="top">作品集</div>
+            <div class="bottm">
+                <div class="bottm-l">
+
+                    <img src="./images/素材2.jpeg" alt="" srcset="" width="300px" height="250px">
+                    <ul>
+                        <h1>時間排序</h1>
+                        <p>利用javascript做出時間排序</p>
+                        <a href="./others/javascript時間排序/index.html" target="_blank">
+                            <li>查看更多</li>
+                        </a>
+                    </ul>
+
+                </div>
+                <div class="bottm-c">
+                    <img src="./images/素材3.jpeg" alt="" srcset="" width="300px" height="250px">
+                    <ul>
+                        <h1>旅遊網站</h1>
+                        <p>主要是透過bootstrap框架去製作</p>
+                        <a href="https://feng0409.github.io/traval/" target="_blank">
+                            <li>查看更多</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="bottm-r">
+                    <ul>
+                        <img src="./images/素材4.jpeg" alt="" srcset="" width="300px" height="250px">
+                        <h1>夏威夷網站</h1>
+                        <p>透過HTML、CSS去排版的網頁</p>
+                        <a href="./others/夏威夷旅遊/index.html" target="_blank">
+                            <li>查看更多</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-3">
+            <div class="section-3-l">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29123.105025029057!2d120.6660693408736!3d24.158117250937696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d61597adcef%3A0xbbef51b8cd9fc6f9!2zNDA05Y-w5Lit5biC5YyX5Y2A!5e0!3m2!1szh-TW!2stw!4v1623837378628!5m2!1szh-TW!2stw"
+                    width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="section-3-r">
+                <h1 class="phone1">聯絡方式</h1><br>
+                <h3 class="phone2">
+                    希望性質：全職工作<br><br>
+                    希望職稱：前端工程師、網頁設計師、助理工程師<br><br>
+                    地址:台中市北區衛道路<br><br>
+                    電話:0988375542<br><br>
+                    建議瀏覽器：Chrome，Firefox，IE10.0以上版本 (螢幕最佳顯示效果為1920 * 1280)
+                </h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="bottom">
+            本網頁僅供練習使用，若有冒犯請洽0988-375-542
+        </div>
+    </footer>
+    <a id="gototop" href="#">
+        <div> Top</div>
+    </a>
+</body>
+
+</html>
